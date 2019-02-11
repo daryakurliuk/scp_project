@@ -22,11 +22,24 @@ modules:
         requires:
             - {name: pt_db}
             - {name: pt_hdi}
+            - {name: pt_uaa}
         provides:
             - {name: pt_service, properties: {url: '${default-url}'}}
         parameters:
             memory: 128M
             disk_quota: 128M
+#    -
+#        name: flp
+#        type: com.sap.portal.site-content
+#        path: flp
+#        parameters:
+#            memory: 128M
+#            buildpack: 'https://github.com/cloudfoundry/nodejs-buildpack/releases/download/v1.6.21/nodejs-buildpack-v1.6.21.zip'
+#        requires:
+#            - {name: pt_portal}
+#            - {name: pt_uaa}
+#            - {name: pt_deployer}
+#            - {name: deployer}
     -
         name: user_create
         type: html5
@@ -63,7 +76,8 @@ modules:
             - {name: pt_conn}
             - {name: pt_uaa}
             - {name: pt_router}
-            - {name: pt_service, group: destinations, properties: {name: pt_service, url: '~{url}'}}
+#            - {name: pt_portal}
+            - {name: pt_service, group: destinations, properties: {name: pt_service, url: '~{url}', forwardAuthToken: true}}
     -
         name: deployer
         type: com.sap.html5.application-content
@@ -76,6 +90,11 @@ modules:
             disk-quota: 256M
             memory: 128M
 resources:
+#    -   name: pt_portal
+#        parameters:
+#           service-plan: standard
+#           service: portal
+#        type: org.cloudfoundry.managed-service
     -
         name: pt_uaa
         parameters:
