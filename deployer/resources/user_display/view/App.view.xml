@@ -1,0 +1,34 @@
+<mvc:View
+controllerName="user_display.controller.App"
+	xmlns="sap.m"
+    xmlns:l="sap.ui.layout"
+	xmlns:mvc="sap.ui.core.mvc">
+	<Shell>
+	<App id="app">
+	<pages>
+	<Page>
+    <Panel  class="sapUiResponsiveMargin" width="auto">
+		<content>
+			<List
+				id="PeopleList"
+				headerText="{i18n>peopleList}"
+				items="{
+					path: 'users>/Users',
+					factory: '.productListFactory'
+				}">
+				<dependents>
+					<ObjectListItem
+						id="productExtended"
+						title="UsId: {users>usid} Name: {users>name}"
+						type="Active"
+						press = ".onItemSelected">
+					</ObjectListItem>
+				</dependents>
+			</List>
+		</content>
+	</Panel>
+	</Page>
+	</pages>
+	</App>
+	</Shell>
+    </mvc:View>

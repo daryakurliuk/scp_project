@@ -1,0 +1,42 @@
+<mvc:View controllerName="user_display.controller.Detail" xmlns="sap.m" xmlns:l="sap.ui.layout" xmlns:mvc="sap.ui.core.mvc">
+	<Shell>
+	<App id="detail">
+	<pages>
+	<Page>
+    <Panel id="PeopleDetailPanel" headerText="Details" class="sapUiResponsiveMargin" width="auto">
+    <content>
+      <Table id="details" >
+        <columns>
+          <Column id="userNameColumn">
+            <Text text="{i18n>userNameLabelText}" />
+          </Column>
+          <Column id="firstNameColumn">
+            <Text text="{i18n>firstNameLabelText}" />
+          </Column>
+          <Column id="lastNameColumn">
+            <Text text="{i18n>lastNameLabelText}" />
+          </Column>
+          <Column id="GenderColumn">
+            <Text text="{i18n>genderLabelText}" />
+          </Column>
+        
+        </columns>
+        <items>
+          <ColumnListItem>
+            <cells>
+              <Label text="{users>usid}" />
+            </cells>
+            <cells>
+              <Label text="users>name}" />
+            </cells>
+                           
+          </ColumnListItem>
+        </items>
+      </Table>
+    </content>
+  </Panel>
+	</Page>
+	</pages>
+	</App>
+	</Shell>
+        </mvc:View>

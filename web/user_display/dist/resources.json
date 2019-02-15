@@ -12,10 +12,35 @@
             "name": "Component.js"
         },
         {
+            "name": "controller\\App-dbg.controller.js",
+            "isDebug": true
+        },
+        {
+            "name": "controller\\App.controller.js"
+        },
+        {
+            "name": "controller\\Detail-dbg.controller.js",
+            "isDebug": true
+        },
+        {
+            "name": "controller\\Detail.controller.js"
+        },
+        {
             "name": "di.code-validation.core_issues.json"
         },
         {
+            "name": "i18n\\i18n.properties",
+            "raw": "i18n\\i18n.properties"
+        },
+        {
+            "name": "index-dbg.js",
+            "isDebug": true
+        },
+        {
             "name": "index.html"
+        },
+        {
+            "name": "index.js"
         },
         {
             "name": "manifest.json"
@@ -28,13 +53,47 @@
             "name": "tmp\\Component.js"
         },
         {
+            "name": "tmp\\controller\\App.controller.js"
+        },
+        {
+            "name": "tmp\\controller\\Detail.controller.js"
+        },
+        {
+            "name": "tmp\\i18n\\i18n.properties",
+            "raw": "i18n\\i18n.properties"
+        },
+        {
             "name": "tmp\\index.html"
+        },
+        {
+            "name": "tmp\\index.js"
         },
         {
             "name": "tmp\\manifest.json"
         },
         {
+            "name": "tmp\\view\\App.view.xml"
+        },
+        {
+            "name": "tmp\\view\\Detail.view.xml"
+        },
+        {
             "name": "tmp-dbg\\Component.js"
+        },
+        {
+            "name": "tmp-dbg\\controller\\App.controller.js"
+        },
+        {
+            "name": "tmp-dbg\\controller\\Detail.controller.js"
+        },
+        {
+            "name": "tmp-dbg\\index.js"
+        },
+        {
+            "name": "view\\App.view.xml"
+        },
+        {
+            "name": "view\\Detail.view.xml"
         },
         {
             "name": "xs-app.json"
