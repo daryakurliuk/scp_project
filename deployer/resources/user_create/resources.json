@@ -12,10 +12,28 @@
             "name": "Component.js"
         },
         {
+            "name": "controller\\user_create-dbg.controller.js",
+            "isDebug": true
+        },
+        {
+            "name": "controller\\user_create.controller.js"
+        },
+        {
+            "name": "css\\style-dbg.css",
+            "isDebug": true
+        },
+        {
+            "name": "css\\style.css"
+        },
+        {
             "name": "di.code-validation.core_issues.json"
         },
         {
             "name": "fragment\\ConfirmDeleteDialog.fragment.xml"
+        },
+        {
+            "name": "i18n\\i18n.properties",
+            "raw": "i18n\\i18n.properties"
         },
         {
             "name": "index.html"
@@ -31,7 +49,17 @@
             "name": "tmp\\Component.js"
         },
         {
+            "name": "tmp\\controller\\user_create.controller.js"
+        },
+        {
+            "name": "tmp\\css\\style.css"
+        },
+        {
             "name": "tmp\\fragment\\ConfirmDeleteDialog.fragment.xml"
+        },
+        {
+            "name": "tmp\\i18n\\i18n.properties",
+            "raw": "i18n\\i18n.properties"
         },
         {
             "name": "tmp\\index.html"
@@ -40,7 +68,19 @@
             "name": "tmp\\manifest.json"
         },
         {
+            "name": "tmp\\view\\App.view.xml"
+        },
+        {
             "name": "tmp-dbg\\Component.js"
+        },
+        {
+            "name": "tmp-dbg\\controller\\user_create.controller.js"
+        },
+        {
+            "name": "tmp-dbg\\css\\style.css"
+        },
+        {
+            "name": "view\\App.view.xml"
         },
         {
             "name": "xs-app.json"
