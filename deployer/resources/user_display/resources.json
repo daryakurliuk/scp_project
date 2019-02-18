@@ -33,6 +33,11 @@
             "raw": "i18n\\i18n.properties"
         },
         {
+            "name": "i18n\\i18n_en_US.properties",
+            "raw": "i18n\\i18n.properties",
+            "locale": "_en_US"
+        },
+        {
             "name": "index.html"
         },
         {
@@ -54,6 +59,11 @@
         {
             "name": "tmp\\i18n\\i18n.properties",
             "raw": "i18n\\i18n.properties"
+        },
+        {
+            "name": "tmp\\i18n\\i18n_en_US.properties",
+            "raw": "i18n\\i18n.properties",
+            "locale": "_en_US"
         },
         {
             "name": "tmp\\index.html"

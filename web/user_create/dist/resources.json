@@ -12,11 +12,18 @@
             "name": "Component.js"
         },
         {
-            "name": "controller\\user_create-dbg.controller.js",
+            "name": "controller\\App-dbg.controller.js",
             "isDebug": true
         },
         {
-            "name": "controller\\user_create.controller.js"
+            "name": "controller\\App.controller.js"
+        },
+        {
+            "name": "controller\\Create-dbg.controller.js",
+            "isDebug": true
+        },
+        {
+            "name": "controller\\Create.controller.js"
         },
         {
             "name": "css\\style-dbg.css",
@@ -49,7 +56,10 @@
             "name": "tmp\\Component.js"
         },
         {
-            "name": "tmp\\controller\\user_create.controller.js"
+            "name": "tmp\\controller\\App.controller.js"
+        },
+        {
+            "name": "tmp\\controller\\Create.controller.js"
         },
         {
             "name": "tmp\\css\\style.css"
@@ -71,16 +81,25 @@
             "name": "tmp\\view\\App.view.xml"
         },
         {
+            "name": "tmp\\view\\user_create.view.xml"
+        },
+        {
             "name": "tmp-dbg\\Component.js"
         },
         {
-            "name": "tmp-dbg\\controller\\user_create.controller.js"
+            "name": "tmp-dbg\\controller\\App.controller.js"
+        },
+        {
+            "name": "tmp-dbg\\controller\\Create.controller.js"
         },
         {
             "name": "tmp-dbg\\css\\style.css"
         },
         {
             "name": "view\\App.view.xml"
+        },
+        {
+            "name": "view\\user_create.view.xml"
         },
         {
             "name": "xs-app.json"

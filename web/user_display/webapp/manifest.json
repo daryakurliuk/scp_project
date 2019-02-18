@@ -51,7 +51,7 @@
 			"viewName": "user_display.view.user_display",
 			"type": "XML",
 			"async": true,
-			"id": "app"
+			"id": "display"
 		},
 		"dependencies": {
 			"minUI5Version": "1.60.1",
@@ -79,17 +79,9 @@
 					"defaultCountMode": "Inline",
 					"useBatch": false,
 					"disableHeadRequestForToken": true
-    			}
-			}
-		},
-		"resources": {
-			"css": [{
-				"uri": "css/style.css"
-			}]
+				}
+			}	
 		}
-	}
+		},
+		"resources": {		}
 }
-
-
-
-

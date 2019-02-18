@@ -15,16 +15,13 @@ const userLib = new Userlib($.hdb.getConnection({
                     userLib.doPost(JSON.parse($.request.body.asString()));
                     break;
                 }
-                case $.net.http.GET : {
-                    userLib.doGet();
-                    break;
-                }
                 case $.net.http.DEL : {
-                   userLib.doDelete($.request.parameters.get("userid"));
+                    userLib.doDelete($.request.parameters.get("usid"));
                     break;
                 }
                 default: {
-                    $.response.status = $.net.http.METHOD_NOT_ALLOWED;
+                    userLib.doGet();
+                    break;
                 }
             }
         } catch (e) {

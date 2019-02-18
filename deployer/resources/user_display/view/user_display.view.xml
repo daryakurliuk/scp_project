@@ -3,17 +3,29 @@
 		<App id="home">
 			<Page
 				title="USER DISPLAY">
+				<Panel>
+					<Input id="input_name" width="30%"/>
+					<Button text="Update" press="updateUser" />
+					<Button text="Create" press="createUser" />
+				</Panel>
 				<Panel class="sapUiResponsiveMargin" width="auto">
-					<content>
-						<Table id="usersList" items="{
+					<content>						
+						<Table id="usersTable" items="{
 										path: 'users>/Users'
-									}">
+									}"
+									mode="SingleSelect">
 							<columns>
-								<Column id="idColumn">
-									<Text text="{ID}" />
-									</Column>
-								<Column id="nameColumn">
-									<Text text="{Name}" />
+								<Column id="idColumn" width="10%">
+									<Text text="ID" />
+								</Column>
+								<Column id="nameColumn" width="10%">
+									<Text text="Name" />
+								</Column>
+								<Column id="createDate" width="40%">
+									<Text text="Creation Date" />
+								</Column>
+								<Column id="updateDate" width="40%">
+									<Text text="Update Date" />
 								</Column>												
 							</columns>
 							<items>
@@ -24,7 +36,13 @@
 									</cells>
 									<cells>
 										<Label text="{users>name}" />
-									</cells>																
+									</cells>
+									<cells>
+										<Label text="{users>creationDate}" />
+									</cells>
+									<cells>
+										<Label text="{users>updateDate}" />
+									</cells>																									
 								</ColumnListItem>
 							</items>
 						</Table>	
