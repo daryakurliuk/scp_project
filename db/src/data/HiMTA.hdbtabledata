@@ -8,12 +8,12 @@
         "file_name": "HiMTA::Users.csv",
         "has_header": true
       },
-       "import_settings": {
+      "import_settings": {
         "import_columns": [
           "usid",
           "name",
-         "creationDate",
-         "updateDate"
+           "creationDate",
+          "updateDate"
         ]
       }
     },
@@ -26,6 +26,7 @@
       },
       "import_settings": {
         "import_columns": [
+					"adid",
 					"usid",
 					"city",
 					"strt",

@@ -1,2 +1,2 @@
-usid,city,strt,hnum
-0003,Minsk,Ivanova,2
+adid,usid,city,strt,hnum
+0001,0003,Minsk,Ivanova,2

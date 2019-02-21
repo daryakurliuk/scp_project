@@ -1,8 +1,7 @@
-<mvc:View controllerName="user_display.controller.user_display" xmlns="sap.m" xmlns:l="sap.ui.layout" xmlns:mvc="sap.ui.core.mvc">
+<mvc:View controllerName="user_display.controller.display" xmlns="sap.m" xmlns:l="sap.ui.layout" xmlns:mvc="sap.ui.core.mvc">
 	<Shell>
 		<App id="home">
-			<Page
-				title="USER DISPLAY">
+			<Page title="USER DISPLAY">
 				<Panel>
 					<Input id="input_name" width="30%"/>
 					<Button text="Update" press="updateUser" />

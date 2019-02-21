@@ -4,7 +4,7 @@
 }));
 
     const USER_TABLE = "HiMTA::User";
-    const SEQ_NAME =   "HiMTA::usid";
+    const USER_ID =   "HiMTA::usid";
 
 function usersCreate(param){
     $.trace.error("Param :" + JSON.stringify(param));
@@ -16,7 +16,7 @@ function usersCreate(param){
 
 	var currentDate = new Date();	
 
-    var oUserItems = setToJSON.recordSetToJSON(oResult, "items");
+    var oUserItems = service.recordSetToJSON(oResult, "items");
     var oUser = oUserItems.items[0];
 
 	oUser.creationDate = currentDate;
@@ -58,7 +58,7 @@ function usersUpdate(param){
     var pStmt = param.connection.prepareStatement("select * from \"" + after + "\"");
     var oResult = pStmt.executeQuery();
 
-    var oUserItems = setToJSON.recordSetToJSON(oResult, "items");
+    var oUserItems = service.recordSetToJSON(oResult, "items");
     var oUser = oUserItems.items[0];
     $.trace.error("Update oUser :" + JSON.stringify(oUser));
 

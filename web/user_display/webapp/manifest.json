@@ -48,7 +48,7 @@
 
 	"sap.ui5": {
 		"rootView": {
-			"viewName": "user_display.view.user_display",
+			"viewName": "user_display.view.display",
 			"type": "XML",
 			"async": true,
 			"id": "display"

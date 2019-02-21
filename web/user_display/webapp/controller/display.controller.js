@@ -4,27 +4,25 @@ sap.ui.define([
 ], function (Controller, JSONModel) {
 	"use strict";
 
-	return Controller.extend("user_display.controller.user_display", {
+	return Controller.extend("user_display.controller.display", {
         onInit: function () {
 			console.log("controller init");		
 		},
 
 		updateUser: function() {
 			var oTable = this.getView().byId("usersTable");
-
+			console.log("usersTable");
 			var oSelectedItem = oTable.getSelectedItem();
 
-			var index = oTable.indexOfItem(oSelectedItem);
-			console.log(index);
+			var name = this.getView().byId("input_name").getValue();
 
-			var name = sap.ui.getCore().byId(this.getView().sId + "--input_name").getValue();
-
-			if (index == -1){
+			if (!oSelectedItem){
 				sap.m.MessageToast.show("User is not selected!");
-			} else if (name == ""){
+			} else if (!name){
 				sap.m.MessageToast.show("Enter the name");	
 			} else{
-				var usid = oTable.getSelectedItem().getBindingContext("users").getObject().usid;
+				console.log("Start request");
+				var usid = oSelectedItem.getBindingContext("users").getObject().usid;
 				var settings = {
 					"async": true,
 					"crossDomain": true,
@@ -45,9 +43,8 @@ sap.ui.define([
 		},
 
 		createUser: function () {
-			var name = sap.ui.getCore().byId(this.getView().sId + "--input_name").getValue();
-
-			if (name == ""){
+			var name = this.getView().byId("input_name").getValue();
+			if (!name){
 				sap.m.MessageToast.show("Enter the name");	
 			} else {
 				var settings = {
@@ -60,8 +57,7 @@ sap.ui.define([
 					},
 					"processData": false,
 					"data": "{\"name\": \"" + name  + "\"}"
-				};
-	
+				};	
 				$.ajax(settings).done(function (response) {
 					console.log(response);
 				});

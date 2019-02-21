@@ -12,11 +12,11 @@
             "name": "Component.js"
         },
         {
-            "name": "controller\\user_display-dbg.controller.js",
+            "name": "controller\\display-dbg.controller.js",
             "isDebug": true
         },
         {
-            "name": "controller\\user_display.controller.js"
+            "name": "controller\\display.controller.js"
         },
         {
             "name": "css\\style-dbg.css",
@@ -51,7 +51,7 @@
             "name": "tmp\\Component.js"
         },
         {
-            "name": "tmp\\controller\\user_display.controller.js"
+            "name": "tmp\\controller\\display.controller.js"
         },
         {
             "name": "tmp\\css\\style.css"
@@ -72,19 +72,19 @@
             "name": "tmp\\manifest.json"
         },
         {
-            "name": "tmp\\view\\user_display.view.xml"
+            "name": "tmp\\view\\display.view.xml"
         },
         {
             "name": "tmp-dbg\\Component.js"
         },
         {
-            "name": "tmp-dbg\\controller\\user_display.controller.js"
+            "name": "tmp-dbg\\controller\\display.controller.js"
         },
         {
             "name": "tmp-dbg\\css\\style.css"
         },
         {
-            "name": "view\\user_display.view.xml"
+            "name": "view\\display.view.xml"
         },
         {
             "name": "xs-app.json"
